@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "regular_courses",
+  "info": {
+    "singularName": "regular-course",
+    "pluralName": "regular-courses",
+    "displayName": "regular_course",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "apart": {
+      "type": "string"
+    },
+    "subjects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::subject.subject",
+      "mappedBy": "regular_course"
+    }
+  }
+}

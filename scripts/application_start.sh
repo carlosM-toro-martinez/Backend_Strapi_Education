@@ -1,2 +1,2 @@
 sudo pm2 delete all
-sudo pm2 start npm --name "Backend_Strapi_Education" -- start
+NODE_ENV=production sudo pm2 start npm --name "Backend_Strapi_Education" -- start
